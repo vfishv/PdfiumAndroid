@@ -48,6 +48,14 @@ android {
         versionCode 1
         versionName "1.9.0"
     }
+
+    buildFeatures {
+        buildConfig = true
+        dataBinding = false
+        viewBinding = false
+        //buildFeatures.compose = true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
